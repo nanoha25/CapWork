@@ -27,16 +27,16 @@ load9_GG = xlsread(input_file,'Monthly 10 homes 2','J18:J29')'; %Customer 48 mon
 load10_GG = xlsread(input_file,'Monthly 10 homes 2','K18:K29')'; %Customer 49 monthly gross generation
 
 %Load profile for non-solar homes
-load11_GC = xlsread(input_file,'Monthly 10 homes 2','N4:N15')'; %Customer 140 monthly general consumption 
-load12_GC = xlsread(input_file,'Monthly 10 homes 2','O4:O15')'; %Customer 141 monthly general consumption
-load13_GC = xlsread(input_file,'Monthly 10 homes 2','P4:P15')'; %Customer 142 monthly general consumption
-load14_GC = xlsread(input_file,'Monthly 10 homes 2','Q4:Q15')'; %Customer 143 monthly general consumption
-load15_GC = xlsread(input_file,'Monthly 10 homes 2','R4:R15')'; %Customer 144 monthly general consumption
-load16_GC = xlsread(input_file,'Monthly 10 homes 2','S4:S15')'; %Customer 145 monthly general consumption
-load17_GC = xlsread(input_file,'Monthly 10 homes 2','T4:T15')'; %Customer 146 monthly general consumption
-load18_GC = xlsread(input_file,'Monthly 10 homes 2','U4:U15')'; %Customer 147 monthly general consumption
-load19_GC = xlsread(input_file,'Monthly 10 homes 2','V4:V15')'; %Customer 148 monthly general consumption
-load20_GC = xlsread(input_file,'Monthly 10 homes 2','W4:W15')'; %Customer 149 monthly general consumption
+load11_GC = xlsread(input_file,'Monthly 10 homes 2','N4:N15')'; %Customer 70 monthly general consumption 
+load12_GC = xlsread(input_file,'Monthly 10 homes 2','O4:O15')'; %Customer 71 monthly general consumption
+load13_GC = xlsread(input_file,'Monthly 10 homes 2','P4:P15')'; %Customer 72 monthly general consumption
+load14_GC = xlsread(input_file,'Monthly 10 homes 2','Q4:Q15')'; %Customer 73 monthly general consumption
+load15_GC = xlsread(input_file,'Monthly 10 homes 2','R4:R15')'; %Customer 74 monthly general consumption
+load16_GC = xlsread(input_file,'Monthly 10 homes 2','S4:S15')'; %Customer 75 monthly general consumption
+load17_GC = xlsread(input_file,'Monthly 10 homes 2','T4:T15')'; %Customer 76 monthly general consumption
+load18_GC = xlsread(input_file,'Monthly 10 homes 2','U4:U15')'; %Customer 77 monthly general consumption
+load19_GC = xlsread(input_file,'Monthly 10 homes 2','V4:V15')'; %Customer 78 monthly general consumption
+load20_GC = xlsread(input_file,'Monthly 10 homes 2','W4:W15')'; %Customer 79 monthly general consumption
 
 N = length(load1_GC);
 

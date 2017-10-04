@@ -26,17 +26,17 @@ load8_GG = xlsread(input_file,'Monthly 10 homes 2','I18:I29')'; %Customer 47 mon
 load9_GG = xlsread(input_file,'Monthly 10 homes 2','J18:J29')'; %Customer 48 monthly gross generation
 load10_GG = xlsread(input_file,'Monthly 10 homes 2','K18:K29')'; %Customer 49 monthly gross generation
 
-%Load profile for non-solar homes
-% load11_GC = xlsread(input_file,'Monthly 10 homes 2','N4:N15')'; %Customer 70 monthly general consumption 
-% load12_GC = xlsread(input_file,'Monthly 10 homes 2','O4:O15')'; %Customer 71 monthly general consumption
-% load13_GC = xlsread(input_file,'Monthly 10 homes 2','P4:P15')'; %Customer 72 monthly general consumption
-% load14_GC = xlsread(input_file,'Monthly 10 homes 2','Q4:Q15')'; %Customer 73 monthly general consumption
-% load15_GC = xlsread(input_file,'Monthly 10 homes 2','R4:R15')'; %Customer 74 monthly general consumption
-% load16_GC = xlsread(input_file,'Monthly 10 homes 2','S4:S15')'; %Customer 75 monthly general consumption
-% load17_GC = xlsread(input_file,'Monthly 10 homes 2','T4:T15')'; %Customer 76 monthly general consumption
-% load18_GC = xlsread(input_file,'Monthly 10 homes 2','U4:U15')'; %Customer 77 monthly general consumption
-% load19_GC = xlsread(input_file,'Monthly 10 homes 2','V4:V15')'; %Customer 78 monthly general consumption
-% load20_GC = xlsread(input_file,'Monthly 10 homes 2','W4:W15')'; %Customer 79 monthly general consumption
+% Load profile for non-solar homes
+load11_GC = xlsread(input_file,'Monthly 10 homes 2','N4:N15')'; %Customer 70 monthly general consumption 
+load12_GC = xlsread(input_file,'Monthly 10 homes 2','O4:O15')'; %Customer 71 monthly general consumption
+load13_GC = xlsread(input_file,'Monthly 10 homes 2','P4:P15')'; %Customer 72 monthly general consumption
+load14_GC = xlsread(input_file,'Monthly 10 homes 2','Q4:Q15')'; %Customer 73 monthly general consumption
+load15_GC = xlsread(input_file,'Monthly 10 homes 2','R4:R15')'; %Customer 74 monthly general consumption
+load16_GC = xlsread(input_file,'Monthly 10 homes 2','S4:S15')'; %Customer 75 monthly general consumption
+load17_GC = xlsread(input_file,'Monthly 10 homes 2','T4:T15')'; %Customer 76 monthly general consumption
+load18_GC = xlsread(input_file,'Monthly 10 homes 2','U4:U15')'; %Customer 77 monthly general consumption
+load19_GC = xlsread(input_file,'Monthly 10 homes 2','V4:V15')'; %Customer 78 monthly general consumption
+load20_GC = xlsread(input_file,'Monthly 10 homes 2','W4:W15')'; %Customer 79 monthly general consumption
 
 N = length(load1_GC);
 
@@ -92,26 +92,26 @@ while(i<N+1)
     mpc.gen(11, QG) = 0.1021*load10_GG(1,i);
     
     %buses for non-solar homes
-%     mpc.bus(12, PD) = load11_GC(1,i);
-%     mpc.bus(12, QD) = 0.3286*load11_GC(1,i);
-%     mpc.bus(13, PD) = load12_GC(1,i);
-%     mpc.bus(13, QD) = 0.3286*load12_GC(1,i);
-%     mpc.bus(14, PD) = load13_GC(1,i);
-%     mpc.bus(14, QD) = 0.3286*load13_GC(1,i);
-%     mpc.bus(15, PD) = load14_GC(1,i);
-%     mpc.bus(15, QD) = 0.3286*load14_GC(1,i);
-%     mpc.bus(16, PD) = load15_GC(1,i);
-%     mpc.bus(16, QD) = 0.3286*load15_GC(1,i);
-%     mpc.bus(17, PD) = load16_GC(1,i);
-%     mpc.bus(17, QD) = 0.3286*load16_GC(1,i);
-%     mpc.bus(18, PD) = load17_GC(1,i);
-%     mpc.bus(18, QD) = 0.3286*load17_GC(1,i);
-%     mpc.bus(19, PD) = load18_GC(1,i);
-%     mpc.bus(19, QD) = 0.3286*load18_GC(1,i);
-%     mpc.bus(20, PD) = load19_GC(1,i);
-%     mpc.bus(20, QD) = 0.3286*load19_GC(1,i);
-%     mpc.bus(21, PD) = load20_GC(1,i);
-%     mpc.bus(21, QD) = 0.3286*load20_GC(1,i);
+    mpc.bus(12, PD) = load11_GC(1,i);
+    mpc.bus(12, QD) = 0.3286*load11_GC(1,i);
+    mpc.bus(13, PD) = load12_GC(1,i);
+    mpc.bus(13, QD) = 0.3286*load12_GC(1,i);
+    mpc.bus(14, PD) = load13_GC(1,i);
+    mpc.bus(14, QD) = 0.3286*load13_GC(1,i);
+    mpc.bus(15, PD) = load14_GC(1,i);
+    mpc.bus(15, QD) = 0.3286*load14_GC(1,i);
+    mpc.bus(16, PD) = load15_GC(1,i);
+    mpc.bus(16, QD) = 0.3286*load15_GC(1,i);
+    mpc.bus(17, PD) = load16_GC(1,i);
+    mpc.bus(17, QD) = 0.3286*load16_GC(1,i);
+    mpc.bus(18, PD) = load17_GC(1,i);
+    mpc.bus(18, QD) = 0.3286*load17_GC(1,i);
+    mpc.bus(19, PD) = load18_GC(1,i);
+    mpc.bus(19, QD) = 0.3286*load18_GC(1,i);
+    mpc.bus(20, PD) = load19_GC(1,i);
+    mpc.bus(20, QD) = 0.3286*load19_GC(1,i);
+    mpc.bus(21, PD) = load20_GC(1,i);
+    mpc.bus(21, QD) = 0.3286*load20_GC(1,i);
     
     
     D = ['This is case ',num2str(i)];

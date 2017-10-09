@@ -68,7 +68,7 @@ ebN = 5; % end-of-day battery state of charge (SOC)
 etaI = 0.85; % inverter efficiency
 
 % Define time horizon data
-horizon = 24; % decision horizon in hours
+horizon = 48; % decision horizon in hours
 dt = horizon/N; % time step in hours
 
 %% **********************************************************************************************************************************************************

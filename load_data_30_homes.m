@@ -38,6 +38,17 @@ load18_GC = xlsread(input_file,'Monthly 10 homes 2','U4:U15')'; %Customer 77 mon
 load19_GC = xlsread(input_file,'Monthly 10 homes 2','V4:V15')'; %Customer 78 monthly general consumption
 load20_GC = xlsread(input_file,'Monthly 10 homes 2','W4:W15')'; %Customer 79 monthly general consumption
 
+load21_GC = xlsread(input_file,'Monthly 10 homes 2','Z4:Z15')'; %Customer 60 monthly general consumption 
+load22_GC = xlsread(input_file,'Monthly 10 homes 2','AA4:AA15')'; %Customer 61 monthly general consumption
+load23_GC = xlsread(input_file,'Monthly 10 homes 2','AB4:AB15')'; %Customer 62 monthly general consumption
+load24_GC = xlsread(input_file,'Monthly 10 homes 2','AC4:AC15')'; %Customer 63 monthly general consumption
+load25_GC = xlsread(input_file,'Monthly 10 homes 2','AD4:AD15')'; %Customer 64 monthly general consumption
+load26_GC = xlsread(input_file,'Monthly 10 homes 2','AE4:AE15')'; %Customer 65 monthly general consumption
+load27_GC = xlsread(input_file,'Monthly 10 homes 2','AF4:AF15')'; %Customer 66 monthly general consumption
+load28_GC = xlsread(input_file,'Monthly 10 homes 2','AG4:AG15')'; %Customer 67 monthly general consumption
+load29_GC = xlsread(input_file,'Monthly 10 homes 2','AH4:AH15')'; %Customer 68 monthly general consumption
+load30_GC = xlsread(input_file,'Monthly 10 homes 2','AI4:AI15')'; %Customer 69 monthly general consumption
+
 N = length(load1_GC);
 
 % calculate power flow and save result of each calculation to an individual
@@ -46,7 +57,7 @@ N = length(load1_GC);
 i = 1;
 while(i<N+1)
     define_constants;
-    mpc = loadcase('captd_case.m');
+    mpc = loadcase('captd_case_30.m');
     %buses for solar homes
     mpc.bus(2, PD) = load1_GC(1,i);
     mpc.bus(2, QD) = 0.3286*load1_GC(1,i);
@@ -113,6 +124,26 @@ while(i<N+1)
     mpc.bus(21, PD) = load20_GC(1,i);
     mpc.bus(21, QD) = 0.3286*load20_GC(1,i);
     
+    mpc.bus(22, PD) = load21_GC(1,i);
+    mpc.bus(22, QD) = 0.3286*load21_GC(1,i);
+    mpc.bus(23, PD) = load22_GC(1,i);
+    mpc.bus(23, QD) = 0.3286*load22_GC(1,i);
+    mpc.bus(24, PD) = load23_GC(1,i);
+    mpc.bus(24, QD) = 0.3286*load23_GC(1,i);
+    mpc.bus(25, PD) = load24_GC(1,i);
+    mpc.bus(25, QD) = 0.3286*load24_GC(1,i);
+    mpc.bus(26, PD) = load25_GC(1,i);
+    mpc.bus(26, QD) = 0.3286*load25_GC(1,i);
+    mpc.bus(27, PD) = load26_GC(1,i);
+    mpc.bus(27, QD) = 0.3286*load26_GC(1,i);
+    mpc.bus(28, PD) = load27_GC(1,i);
+    mpc.bus(28, QD) = 0.3286*load27_GC(1,i);
+    mpc.bus(29, PD) = load28_GC(1,i);
+    mpc.bus(29, QD) = 0.3286*load28_GC(1,i);
+    mpc.bus(30, PD) = load29_GC(1,i);
+    mpc.bus(30, QD) = 0.3286*load29_GC(1,i);
+    mpc.bus(31, PD) = load30_GC(1,i);
+    mpc.bus(31, QD) = 0.3286*load30_GC(1,i);
     
     D = ['This is case ',num2str(i)];
     disp(D); %some output fine-tune

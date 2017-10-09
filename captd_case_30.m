@@ -50,7 +50,7 @@ mpc.bus = [
 %% generator data
 %	bus	Pg	    Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
 mpc.gen = [
-	1	500 	0	300	    -300	1	100     1	5000	   0	0	0	0	0	0	0	0	0	0	0	0;
+	1	500 	0	300	    -300	1	100     1	20000	   0	0	0	0	0	0	0	0	0	0	0	0;
 	2	7 	0	300	    -300	1	100     1	500	   0	0	0	0	0	0	0	0	0	0	0	0; 
 	3	8 	0	300	    -300	1	100     1	500	   0	0	0	0	0	0	0	0	0	0	0	0;
 	4	12 	0	300	    -300	1	100     1	500	   0	0	0	0	0	0	0	0	0	0	0	0;    

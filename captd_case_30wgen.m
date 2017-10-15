@@ -1,4 +1,4 @@
-function mpc = captd_case_30
+function mpc = captd_case_30wgen
 %CAP_CASE  Power flow data for multi-home one-generation system
 
 %   MATPOWER

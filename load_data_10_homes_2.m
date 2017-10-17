@@ -3,12 +3,12 @@ clear all
 %Load data from table
 
 input_file = 'cap_data.xlsx';  
-prompt = 'Enter r: ';
-r = input(prompt);
-prompt2 = 'Enter x: ';
-x = input(prompt2);        
-prompt3 = 'Enter b: ';
-b = input(prompt3); 
+% prompt = 'Enter r: ';
+% r = input(prompt);
+% prompt2 = 'Enter x: ';
+% x = input(prompt2);        
+% prompt3 = 'Enter b: ';
+% b = input(prompt3); 
 
 load140_GC = xlsread(input_file,'Monthly 10 homes 3','B4:B15')'; %Customer 140 monthly general consumption 
 load141_GC = xlsread(input_file,'Monthly 10 homes 3','C4:C15')'; %Customer 141 monthly general consumption
@@ -63,33 +63,33 @@ while(i<N+1)
     mpc.bus(11, PD) = load149_GC(1,i);
     mpc.bus(11, QD) = 0.3286*load149_GC(1,i);
 %---------------------------------------------
-    mpc.gen(2, PG) = load140_GG(1,i);
-    mpc.gen(2, QG) = 0.1021*load140_GG(1,i);
-    mpc.gen(3, PG) = load141_GG(1,i);
-    mpc.gen(3, QG) = 0.1021*load141_GG(1,i);
-    mpc.gen(4, PG) = load142_GG(1,i);
-    mpc.gen(4, QG) = 0.1021*load142_GG(1,i);
-    mpc.gen(5, PG) = load143_GG(1,i);
-    mpc.gen(5, QG) = 0.1021*load143_GG(1,i);
-    mpc.gen(6, PG) = load144_GG(1,i);
-    mpc.gen(6, QG) = 0.1021*load144_GG(1,i);
-    mpc.gen(7, PG) = load145_GG(1,i);
-    mpc.gen(7, QG) = 0.1021*load145_GG(1,i);
-    mpc.gen(8, PG) = load146_GG(1,i);
-    mpc.gen(8, QG) = 0.1021*load146_GG(1,i);
-    mpc.gen(9, PG) = load147_GG(1,i);
-    mpc.gen(9, QG) = 0.1021*load147_GG(1,i);
-    mpc.gen(10, PG) = load148_GG(1,i);
-    mpc.gen(10, QG) = 0.1021*load148_GG(1,i);
-    mpc.gen(11, PG) = load149_GG(1,i);
-    mpc.gen(11, QG) = 0.1021*load149_GG(1,i);
+%     mpc.gen(2, PG) = load140_GG(1,i);
+%     mpc.gen(2, QG) = 0.1021*load140_GG(1,i);
+%     mpc.gen(3, PG) = load141_GG(1,i);
+%     mpc.gen(3, QG) = 0.1021*load141_GG(1,i);
+%     mpc.gen(4, PG) = load142_GG(1,i);
+%     mpc.gen(4, QG) = 0.1021*load142_GG(1,i);
+%     mpc.gen(5, PG) = load143_GG(1,i);
+%     mpc.gen(5, QG) = 0.1021*load143_GG(1,i);
+%     mpc.gen(6, PG) = load144_GG(1,i);
+%     mpc.gen(6, QG) = 0.1021*load144_GG(1,i);
+%     mpc.gen(7, PG) = load145_GG(1,i);
+%     mpc.gen(7, QG) = 0.1021*load145_GG(1,i);
+%     mpc.gen(8, PG) = load146_GG(1,i);
+%     mpc.gen(8, QG) = 0.1021*load146_GG(1,i);
+%     mpc.gen(9, PG) = load147_GG(1,i);
+%     mpc.gen(9, QG) = 0.1021*load147_GG(1,i);
+%     mpc.gen(10, PG) = load148_GG(1,i);
+%     mpc.gen(10, QG) = 0.1021*load148_GG(1,i);
+%     mpc.gen(11, PG) = load149_GG(1,i);
+%     mpc.gen(11, QG) = 0.1021*load149_GG(1,i);
 %---------------------------------------------
-    mpc.branch(1, BR_R) = r;
-    mpc.branch(1, BR_X) = x; 
-    mpc.branch(1, BR_B) = b; 
-    mpc.branch(2, BR_R) = r*2; 
-    mpc.branch(2, BR_X) = x*2;
-    mpc.branch(2, BR_B) = b*2;
+%     mpc.branch(1, BR_R) = r;
+%     mpc.branch(1, BR_X) = x; 
+%     mpc.branch(1, BR_B) = b; 
+%     mpc.branch(2, BR_R) = r*2; 
+%     mpc.branch(2, BR_X) = x*2;
+%     mpc.branch(2, BR_B) = b*2;
 %------------------------------------------------    
     D = ['This is case ',num2str(i)];
     disp(D); %some output fine-tune

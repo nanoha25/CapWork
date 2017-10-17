@@ -51,16 +51,16 @@ load30_GC = xlsread(input_file,'Monthly 30 homes','AE4:AE15')'; %Customer 69 mon
 
 
 % %Load profile for gross generation
-% load1_GG = xlsread(input_file,'Monthly 30 homes','B18:B29')'; %Customer 40 monthly gross generation
-% load2_GG = xlsread(input_file,'Monthly 30 homes','C18:C29')'; %Customer 41 monthly gross generation
-% load3_GG = xlsread(input_file,'Monthly 30 homes','D18:D29')'; %Customer 42 monthly gross generation
-% load4_GG = xlsread(input_file,'Monthly 30 homes','E18:E29')'; %Customer 43 monthly gross generation
-% load5_GG = xlsread(input_file,'Monthly 30 homes','F18:F29')'; %Customer 44 monthly gross generation
-% load6_GG = xlsread(input_file,'Monthly 30 homes','G18:G29')'; %Customer 45 monthly gross generation
-% load7_GG = xlsread(input_file,'Monthly 30 homes','H18:H29')'; %Customer 46 monthly gross generation
-% load8_GG = xlsread(input_file,'Monthly 30 homes','I18:I29')'; %Customer 47 monthly gross generation
-% load9_GG = xlsread(input_file,'Monthly 30 homes','J18:J29')'; %Customer 48 monthly gross generation
-% load10_GG = xlsread(input_file,'Monthly 30 homes','K18:K29')'; %Customer 49 monthly gross generation
+load1_GG = xlsread(input_file,'Monthly 30 homes','B18:B29')'; %Customer 40 monthly gross generation
+load2_GG = xlsread(input_file,'Monthly 30 homes','C18:C29')'; %Customer 41 monthly gross generation
+load3_GG = xlsread(input_file,'Monthly 30 homes','D18:D29')'; %Customer 42 monthly gross generation
+load4_GG = xlsread(input_file,'Monthly 30 homes','E18:E29')'; %Customer 43 monthly gross generation
+load5_GG = xlsread(input_file,'Monthly 30 homes','F18:F29')'; %Customer 44 monthly gross generation
+load6_GG = xlsread(input_file,'Monthly 30 homes','G18:G29')'; %Customer 45 monthly gross generation
+load7_GG = xlsread(input_file,'Monthly 30 homes','H18:H29')'; %Customer 46 monthly gross generation
+load8_GG = xlsread(input_file,'Monthly 30 homes','I18:I29')'; %Customer 47 monthly gross generation
+load9_GG = xlsread(input_file,'Monthly 30 homes','J18:J29')'; %Customer 48 monthly gross generation
+load10_GG = xlsread(input_file,'Monthly 30 homes','K18:K29')'; %Customer 49 monthly gross generation
 % 
 % load11_GG = xlsread(input_file,'Monthly 30 homes','L18:L29')'; %Customer 40 monthly gross generation
 % load12_GG = xlsread(input_file,'Monthly 30 homes','M18:M29')'; %Customer 41 monthly gross generation
@@ -159,26 +159,26 @@ while(i<N+1)
    
     
 %     %generation buses (Gross Generation)
-%     mpc.gen(2, PG) = load1_GG(1,i);
-%     mpc.gen(2, QG) = 0.1021*load1_GG(1,i);
-%     mpc.gen(3, PG) = load2_GG(1,i);
-%     mpc.gen(3, QG) = 0.1021*load2_GG(1,i);
-%     mpc.gen(4, PG) = load3_GG(1,i);
-%     mpc.gen(4, QG) = 0.1021*load3_GG(1,i);
-%     mpc.gen(5, PG) = load4_GG(1,i);
-%     mpc.gen(5, QG) = 0.1021*load4_GG(1,i);
-%     mpc.gen(6, PG) = load5_GG(1,i);
-%     mpc.gen(6, QG) = 0.1021*load5_GG(1,i);
-%     mpc.gen(7, PG) = load6_GG(1,i);
-%     mpc.gen(7, QG) = 0.1021*load6_GG(1,i);
-%     mpc.gen(8, PG) = load7_GG(1,i);
-%     mpc.gen(8, QG) = 0.1021*load7_GG(1,i);
-%     mpc.gen(9, PG) = load8_GG(1,i);
-%     mpc.gen(9, QG) = 0.1021*load8_GG(1,i);
-%     mpc.gen(10, PG) = load9_GG(1,i);
-%     mpc.gen(10, QG) = 0.1021*load9_GG(1,i);
-%     mpc.gen(11, PG) = load10_GG(1,i);
-%     mpc.gen(11, QG) = 0.1021*load10_GG(1,i);
+    mpc.gen(2, PG) = load1_GG(1,i);
+    mpc.gen(2, QG) = 0.1021*load1_GG(1,i);
+    mpc.gen(3, PG) = load2_GG(1,i);
+    mpc.gen(3, QG) = 0.1021*load2_GG(1,i);
+    mpc.gen(4, PG) = load3_GG(1,i);
+    mpc.gen(4, QG) = 0.1021*load3_GG(1,i);
+    mpc.gen(5, PG) = load4_GG(1,i);
+    mpc.gen(5, QG) = 0.1021*load4_GG(1,i);
+    mpc.gen(6, PG) = load5_GG(1,i);
+    mpc.gen(6, QG) = 0.1021*load5_GG(1,i);
+    mpc.gen(7, PG) = load6_GG(1,i);
+    mpc.gen(7, QG) = 0.1021*load6_GG(1,i);
+    mpc.gen(8, PG) = load7_GG(1,i);
+    mpc.gen(8, QG) = 0.1021*load7_GG(1,i);
+    mpc.gen(9, PG) = load8_GG(1,i);
+    mpc.gen(9, QG) = 0.1021*load8_GG(1,i);
+    mpc.gen(10, PG) = load9_GG(1,i);
+    mpc.gen(10, QG) = 0.1021*load9_GG(1,i);
+    mpc.gen(11, PG) = load10_GG(1,i);
+    mpc.gen(11, QG) = 0.1021*load10_GG(1,i);
 % 
 %     mpc.gen(12, PG) = load11_GG(1,i);
 %     mpc.gen(12, QG) = 0.1021*load11_GG(1,i);

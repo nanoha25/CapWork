@@ -267,15 +267,15 @@ if b_edit_switch ~= 0
     mpc.branch(29, BR_R) = scale_factor*0.00410;
     mpc.branch(30, BR_R) = scale_factor*0.00562;
     %below is branches between homes
-%     mpc.branch(31, BR_R) = scale_factor*0.00102;
-%     mpc.branch(32, BR_R) = scale_factor*0.00058;
-%     mpc.branch(33, BR_R) = scale_factor*0.00025;
-%     mpc.branch(34, BR_R) = scale_factor*0.00123;
-%     mpc.branch(35, BR_R) = scale_factor*0.00052;
-%     mpc.branch(36, BR_R) = scale_factor*0.00047;
-%     mpc.branch(37, BR_R) = scale_factor*0.00058;
-%     mpc.branch(38, BR_R) = scale_factor*0.00120;
-%     mpc.branch(39, BR_R) = scale_factor*0.00120;
+    mpc.branch(31, BR_R) = scale_factor*0.00102;
+    mpc.branch(32, BR_R) = scale_factor*0.00058;
+    mpc.branch(33, BR_R) = scale_factor*0.00025;
+    mpc.branch(34, BR_R) = scale_factor*0.00123;
+    mpc.branch(35, BR_R) = scale_factor*0.00052;
+    mpc.branch(36, BR_R) = scale_factor*0.00047;
+    mpc.branch(37, BR_R) = scale_factor*0.00058;
+    mpc.branch(38, BR_R) = scale_factor*0.00120;
+    mpc.branch(39, BR_R) = scale_factor*0.00120;
 %     mpc.branch(40, BR_R) = scale_factor*0.00102;
 %     mpc.branch(41, BR_R) = scale_factor*0.00102;
 %     mpc.branch(42, BR_R) = scale_factor*0.00058;
@@ -295,6 +295,7 @@ if b_edit_switch ~= 0
 %     mpc.branch(56, BR_R) = scale_factor*0.00058;
 %     mpc.branch(57, BR_R) = scale_factor*0.00120;
 %     mpc.branch(58, BR_R) = scale_factor*0.00120;
+%     mpc.branch(59, BR_R) = scale_factor*0.00047;
     
 %branch reactance data    
     %below is branches between grid and home
@@ -329,15 +330,15 @@ if b_edit_switch ~= 0
     mpc.branch(29, BR_X) = scale_factor*0.0470;
     mpc.branch(30, BR_X) = scale_factor*0.0561;
     %below is branches between homes
-%     mpc.branch(31, BR_X) = scale_factor*0.0102;   
-%     mpc.branch(32, BR_X) = scale_factor*0.0058;
-%     mpc.branch(33, BR_X) = scale_factor*0.0421;
-%     mpc.branch(34, BR_X) = scale_factor*0.0980;
-%     mpc.branch(35, BR_X) = scale_factor*0.0432;
-%     mpc.branch(36, BR_X) = scale_factor*0.0703;
-%     mpc.branch(37, BR_X) = scale_factor*0.0889;
-%     mpc.branch(38, BR_X) = scale_factor*0.0120;
-%     mpc.branch(39, BR_X) = scale_factor*0.0120;
+    mpc.branch(31, BR_X) = scale_factor*0.0102;   
+    mpc.branch(32, BR_X) = scale_factor*0.0058;
+    mpc.branch(33, BR_X) = scale_factor*0.0421;
+    mpc.branch(34, BR_X) = scale_factor*0.0980;
+    mpc.branch(35, BR_X) = scale_factor*0.0432;
+    mpc.branch(36, BR_X) = scale_factor*0.0703;
+    mpc.branch(37, BR_X) = scale_factor*0.0889;
+    mpc.branch(38, BR_X) = scale_factor*0.0120;
+    mpc.branch(39, BR_X) = scale_factor*0.0120;
 %     mpc.branch(40, BR_X) = scale_factor*0.0102;
 %     mpc.branch(41, BR_X) = scale_factor*0.0102;    
 %     mpc.branch(42, BR_X) = scale_factor*0.0058;
@@ -357,6 +358,7 @@ if b_edit_switch ~= 0
 %     mpc.branch(56, BR_X) = scale_factor*0.0889;
 %     mpc.branch(57, BR_X) = scale_factor*0.0120;
 %     mpc.branch(58, BR_X) = scale_factor*0.0120;
+%     mpc.branch(59, BR_X) = scale_factor*0.0763;
  
 %branch susceptace data    
     %below is branches between grid and home
@@ -391,15 +393,15 @@ if b_edit_switch ~= 0
     mpc.branch(29, BR_B) = scale_factor*0.00743;
     mpc.branch(30, BR_B) = scale_factor*0.00886;
     %below is branches between homes    
-%     mpc.branch(31, BR_B) = scale_factor*0.04123;
-%     mpc.branch(32, BR_B) = scale_factor*0.07582;
-%     mpc.branch(33, BR_B) = scale_factor*0.00356;
-%     mpc.branch(34, BR_B) = scale_factor*0.00778;
-%     mpc.branch(35, BR_B) = scale_factor*0.00875;
-%     mpc.branch(36, BR_B) = scale_factor*0.04123;
-%     mpc.branch(37, BR_B) = scale_factor*0.05582;
-%     mpc.branch(38, BR_B) = scale_factor*0.01026;
-%     mpc.branch(39, BR_B) = scale_factor*0.01026;
+    mpc.branch(31, BR_B) = scale_factor*0.04123;
+    mpc.branch(32, BR_B) = scale_factor*0.07582;
+    mpc.branch(33, BR_B) = scale_factor*0.00356;
+    mpc.branch(34, BR_B) = scale_factor*0.00778;
+    mpc.branch(35, BR_B) = scale_factor*0.00875;
+    mpc.branch(36, BR_B) = scale_factor*0.04123;
+    mpc.branch(37, BR_B) = scale_factor*0.05582;
+    mpc.branch(38, BR_B) = scale_factor*0.01026;
+    mpc.branch(39, BR_B) = scale_factor*0.01026;
 %     mpc.branch(40, BR_B) = scale_factor*0.04123;
 %     mpc.branch(41, BR_B) = scale_factor*0.04123;
 %     mpc.branch(42, BR_B) = scale_factor*0.07582;
@@ -419,6 +421,7 @@ if b_edit_switch ~= 0
 %     mpc.branch(56, BR_B) = scale_factor*0.05582;
 %     mpc.branch(57, BR_B) = scale_factor*0.01026;
 %     mpc.branch(58, BR_B) = scale_factor*0.01026;
+%     mpc.branch(59, BR_B) = scale_factor*0.04123;
    
     else
 %branch data set for direct editing
@@ -483,7 +486,7 @@ if b_edit_switch ~= 0
 %     mpc.branch(56, BR_R) = r;
 %     mpc.branch(57, BR_R) = r;
 %     mpc.branch(58, BR_R) = r;
-
+%     mpc.branch(59, BR_R) = r;
     
 %branch reactance data    
     %below is branches between grid and home
@@ -546,6 +549,7 @@ if b_edit_switch ~= 0
 %     mpc.branch(56, BR_X) = x;
 %     mpc.branch(57, BR_X) = x;
 %     mpc.branch(58, BR_X) = x;
+%     mpc.branch(59, BR_X) = x;
     
 %branch susceptace data    
     %below is branches between grid and home
@@ -608,6 +612,7 @@ if b_edit_switch ~= 0
 %     mpc.branch(56, BR_B) = b;
 %     mpc.branch(57, BR_B) = b;
 %     mpc.branch(58, BR_B) = b;
+%     mpc.branch(59, BR_B) = b;
     
     end
 end 

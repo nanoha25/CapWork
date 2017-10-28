@@ -70,18 +70,18 @@ load7_GG = xlsread(input_file,'Monthly 30 homes','H18:H29')'; %Customer 46 month
 load8_GG = xlsread(input_file,'Monthly 30 homes','I18:I29')'; %Customer 47 monthly gross generation
 load9_GG = xlsread(input_file,'Monthly 30 homes','J18:J29')'; %Customer 48 monthly gross generation
 load10_GG = xlsread(input_file,'Monthly 30 homes','K18:K29')'; %Customer 49 monthly gross generation
+
+load11_GG = xlsread(input_file,'Monthly 30 homes','L18:L29')'; %Customer 40 monthly gross generation
+load12_GG = xlsread(input_file,'Monthly 30 homes','M18:M29')'; %Customer 41 monthly gross generation
+load13_GG = xlsread(input_file,'Monthly 30 homes','N18:N29')'; %Customer 42 monthly gross generation
+load14_GG = xlsread(input_file,'Monthly 30 homes','O18:O29')'; %Customer 43 monthly gross generation
+load15_GG = xlsread(input_file,'Monthly 30 homes','P18:P29')'; %Customer 44 monthly gross generation
+load16_GG = xlsread(input_file,'Monthly 30 homes','Q18:Q29')'; %Customer 45 monthly gross generation
+load17_GG = xlsread(input_file,'Monthly 30 homes','R18:R29')'; %Customer 46 monthly gross generation
+load18_GG = xlsread(input_file,'Monthly 30 homes','S18:S29')'; %Customer 47 monthly gross generation
+load19_GG = xlsread(input_file,'Monthly 30 homes','T18:T29')'; %Customer 48 monthly gross generation
+load20_GG = xlsread(input_file,'Monthly 30 homes','U18:U29')'; %Customer 49 monthly gross generation
 % 
-% load11_GG = xlsread(input_file,'Monthly 30 homes','L18:L29')'; %Customer 40 monthly gross generation
-% load12_GG = xlsread(input_file,'Monthly 30 homes','M18:M29')'; %Customer 41 monthly gross generation
-% load13_GG = xlsread(input_file,'Monthly 30 homes','N18:N29')'; %Customer 42 monthly gross generation
-% load14_GG = xlsread(input_file,'Monthly 30 homes','O18:O29')'; %Customer 43 monthly gross generation
-% load15_GG = xlsread(input_file,'Monthly 30 homes','P18:P29')'; %Customer 44 monthly gross generation
-% load16_GG = xlsread(input_file,'Monthly 30 homes','Q18:Q29')'; %Customer 45 monthly gross generation
-% load17_GG = xlsread(input_file,'Monthly 30 homes','R18:R29')'; %Customer 46 monthly gross generation
-% load18_GG = xlsread(input_file,'Monthly 30 homes','S18:S29')'; %Customer 47 monthly gross generation
-% load19_GG = xlsread(input_file,'Monthly 30 homes','T18:T29')'; %Customer 48 monthly gross generation
-% load20_GG = xlsread(input_file,'Monthly 30 homes','U18:U29')'; %Customer 49 monthly gross generation
-% % 
 % load21_GG = xlsread(input_file,'Monthly 30 homes','V18:V29')'; %Customer 40 monthly gross generation
 % load22_GG = xlsread(input_file,'Monthly 30 homes','W18:W29')'; %Customer 41 monthly gross generation
 % load23_GG = xlsread(input_file,'Monthly 30 homes','X18:X29')'; %Customer 42 monthly gross generation
@@ -188,7 +188,7 @@ while(i<N+1)
     mpc.gen(10, QG) = 0.1021*load9_GG(1,i);
     mpc.gen(11, PG) = load10_GG(1,i);
     mpc.gen(11, QG) = 0.1021*load10_GG(1,i);
-% 
+
 %     mpc.gen(12, PG) = load11_GG(1,i);
 %     mpc.gen(12, QG) = 0.1021*load11_GG(1,i);
 %     mpc.gen(13, PG) = load12_GG(1,i);
@@ -209,7 +209,7 @@ while(i<N+1)
 %     mpc.gen(20, QG) = 0.1021*load19_GG(1,i);
 %     mpc.gen(21, PG) = load20_GG(1,i);
 %     mpc.gen(21, QG) = 0.1021*load20_GG(1,i);
-%     
+    
 %     mpc.gen(22, PG) = load21_GG(1,i);
 %     mpc.gen(22, QG) = 0.1021*load21_GG(1,i);
 %     mpc.gen(23, PG) = load22_GG(1,i);
@@ -267,15 +267,15 @@ if b_edit_switch ~= 0
     mpc.branch(29, BR_R) = scale_factor*0.00410;
     mpc.branch(30, BR_R) = scale_factor*0.00562;
     %below is branches between homes
-    mpc.branch(31, BR_R) = scale_factor*0.00102;
-    mpc.branch(32, BR_R) = scale_factor*0.00058;
-    mpc.branch(33, BR_R) = scale_factor*0.00025;
-    mpc.branch(34, BR_R) = scale_factor*0.00123;
-    mpc.branch(35, BR_R) = scale_factor*0.00052;
-    mpc.branch(36, BR_R) = scale_factor*0.00047;
-    mpc.branch(37, BR_R) = scale_factor*0.00058;
-    mpc.branch(38, BR_R) = scale_factor*0.00120;
-    mpc.branch(39, BR_R) = scale_factor*0.00120;
+%     mpc.branch(31, BR_R) = scale_factor*0.00102;
+%     mpc.branch(32, BR_R) = scale_factor*0.00058;
+%     mpc.branch(33, BR_R) = scale_factor*0.00025;
+%     mpc.branch(34, BR_R) = scale_factor*0.00123;
+%     mpc.branch(35, BR_R) = scale_factor*0.00052;
+%     mpc.branch(36, BR_R) = scale_factor*0.00047;
+%     mpc.branch(37, BR_R) = scale_factor*0.00058;
+%     mpc.branch(38, BR_R) = scale_factor*0.00120;
+%     mpc.branch(39, BR_R) = scale_factor*0.00120;
 %     mpc.branch(40, BR_R) = scale_factor*0.00102;
 %     mpc.branch(41, BR_R) = scale_factor*0.00102;
 %     mpc.branch(42, BR_R) = scale_factor*0.00058;
@@ -330,15 +330,15 @@ if b_edit_switch ~= 0
     mpc.branch(29, BR_X) = scale_factor*0.0470;
     mpc.branch(30, BR_X) = scale_factor*0.0561;
     %below is branches between homes
-    mpc.branch(31, BR_X) = scale_factor*0.0102;   
-    mpc.branch(32, BR_X) = scale_factor*0.0058;
-    mpc.branch(33, BR_X) = scale_factor*0.0421;
-    mpc.branch(34, BR_X) = scale_factor*0.0980;
-    mpc.branch(35, BR_X) = scale_factor*0.0432;
-    mpc.branch(36, BR_X) = scale_factor*0.0703;
-    mpc.branch(37, BR_X) = scale_factor*0.0889;
-    mpc.branch(38, BR_X) = scale_factor*0.0120;
-    mpc.branch(39, BR_X) = scale_factor*0.0120;
+%     mpc.branch(31, BR_X) = scale_factor*0.0102;   
+%     mpc.branch(32, BR_X) = scale_factor*0.0058;
+%     mpc.branch(33, BR_X) = scale_factor*0.0421;
+%     mpc.branch(34, BR_X) = scale_factor*0.0980;
+%     mpc.branch(35, BR_X) = scale_factor*0.0432;
+%     mpc.branch(36, BR_X) = scale_factor*0.0703;
+%     mpc.branch(37, BR_X) = scale_factor*0.0889;
+%     mpc.branch(38, BR_X) = scale_factor*0.0120;
+%     mpc.branch(39, BR_X) = scale_factor*0.0120;
 %     mpc.branch(40, BR_X) = scale_factor*0.0102;
 %     mpc.branch(41, BR_X) = scale_factor*0.0102;    
 %     mpc.branch(42, BR_X) = scale_factor*0.0058;
@@ -393,15 +393,15 @@ if b_edit_switch ~= 0
     mpc.branch(29, BR_B) = scale_factor*0.00743;
     mpc.branch(30, BR_B) = scale_factor*0.00886;
     %below is branches between homes    
-    mpc.branch(31, BR_B) = scale_factor*0.04123;
-    mpc.branch(32, BR_B) = scale_factor*0.07582;
-    mpc.branch(33, BR_B) = scale_factor*0.00356;
-    mpc.branch(34, BR_B) = scale_factor*0.00778;
-    mpc.branch(35, BR_B) = scale_factor*0.00875;
-    mpc.branch(36, BR_B) = scale_factor*0.04123;
-    mpc.branch(37, BR_B) = scale_factor*0.05582;
-    mpc.branch(38, BR_B) = scale_factor*0.01026;
-    mpc.branch(39, BR_B) = scale_factor*0.01026;
+%     mpc.branch(31, BR_B) = scale_factor*0.04123;
+%     mpc.branch(32, BR_B) = scale_factor*0.07582;
+%     mpc.branch(33, BR_B) = scale_factor*0.00356;
+%     mpc.branch(34, BR_B) = scale_factor*0.00778;
+%     mpc.branch(35, BR_B) = scale_factor*0.00875;
+%     mpc.branch(36, BR_B) = scale_factor*0.04123;
+%     mpc.branch(37, BR_B) = scale_factor*0.05582;
+%     mpc.branch(38, BR_B) = scale_factor*0.01026;
+%     mpc.branch(39, BR_B) = scale_factor*0.01026;
 %     mpc.branch(40, BR_B) = scale_factor*0.04123;
 %     mpc.branch(41, BR_B) = scale_factor*0.04123;
 %     mpc.branch(42, BR_B) = scale_factor*0.07582;

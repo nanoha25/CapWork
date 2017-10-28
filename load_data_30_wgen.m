@@ -57,7 +57,7 @@ N = length(load1_GC);
 i = 1;
 while(i<N+1)
     define_constants;
-    mpc = loadcase('captd_case_30.m');
+    mpc = loadcase('captd_case_30wgen.m');
     %buses for solar homes
     mpc.bus(2, PD) = load1_GC(1,i);
     mpc.bus(2, QD) = 0.3286*load1_GC(1,i);
